@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - AESA Online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/" class="logo">Antônio <i class="fas fa-heart"></i> Maria</a>
+
+            <!-- Navegação Principal -->
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Biografias</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="antonio-elias.html">Rev. Antônio Elias</a></li>
+                            <li><a href="maria-jose.html">Profa. Maria José</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Sermões</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sermoes-ae.html">Audios</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="oracoes.html">Orações</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Livros</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="livros.html">Biblioteca</a></li>
+                            <li><a href="esbocos.html">Esboços</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Depoimentos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cartas.html">Cartas</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-container">
+                <button class="search-toggle" type="button" aria-label="Abrir pesquisa">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar..." autocomplete="off" class="search-input">
+                    <div class="search-results"></div>
+                </div>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Biografias</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="antonio-elias.html">Rev. Antônio Elias</a></li>
+                            <li><a href="maria-jose.html">Profa. Maria José</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Sermões</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sermoes-ae.html">Audios</a></li>
+                            <li><a href="videos.html">Videos</a></li>
+                            <li><a href="oracoes.html">Orações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="livros.html" class="nav-link">Livros</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Depoimentos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cartas.html">Cartas</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero-gallery">
+            <div class="container">
+                <h1 class="hero-title">Nossa Galeria</h1>
+                <p class="hero-subtitle">Momentos especiais e eventos da nossa comunidade</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-filters">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="eventos">Eventos</button>
+                    <button class="filter-btn" data-filter="momentos">Momentos Especiais</button>
+                    <button class="filter-btn" data-filter="viagens">Viagens</button>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Item 1 -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="../images/rev-a.e-preg.png" alt="Rev. Antônio Elias pregando" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Rev. Antônio Elias Pregando</h3>
+                                    <p>Momento de pregação do Rev. Antônio Elias</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>Anos 1960</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="gallery-item" data-category="momentos">
+                        <div class="gallery-image">
+                            <img src="../images/casal-feliz-50.png" alt="Casal feliz nas Bodas de Ouro" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Casal Feliz</h3>
+                                    <p>Antônio e Maria nas Bodas de Ouro</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>Anos 1950</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="gallery-item" data-category="momentos">
+                        <div class="gallery-image">
+                            <img src="../images/casal-1976.jpg" alt="Casal em 1976" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Casal em 1976</h3>
+                                    <p>Antônio e Maria em foto oficial</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>1976</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="../images/betania 1976.jpg" alt="Igreja Betânia em 1976" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Igreja Betânia</h3>
+                                    <p>Momento especial na Igreja Betânia</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>1976</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="gallery-item" data-category="viagens">
+                        <div class="gallery-image">
+                            <img src="../images/rev-aracaju.jpg" alt="Rev. Antônio Elias em Aracaju" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Em Aracaju</h3>
+                                    <p>Rev. Antônio Elias em viagem missionária</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>Anos 1960</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="gallery-item" data-category="viagens">
+                        <div class="gallery-image">
+                            <img src="../images/AE em porto alegre inicio do trabalho.jpg" alt="Rev. Antônio Elias em Porto Alegre" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Porto Alegre</h3>
+                                    <p>Início do trabalho em Porto Alegre</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>1956</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 7 -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="../images/AE em acao.jpg" alt="Rev. Antônio Elias em ação" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Em Ação</h3>
+                                    <p>Rev. Antônio Elias em momento de pregação</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>Anos 1960</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 8 -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="../images/AE com Billy graham.jpg" alt="Rev. Antônio Elias com Billy Graham" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>Com Billy Graham</h3>
+                                    <p>Encontro com o evangelista Billy Graham</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>Anos 1960</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 9 -->
+                    <div class="gallery-item" data-category="eventos">
+                        <div class="gallery-image">
+                            <img src="../images/AE CEN aracaju2 1964.jpg" alt="Rev. Antônio Elias em Aracaju" loading="lazy">
+                            <div class="gallery-overlay">
+                                <div class="gallery-info">
+                                    <h3>CEN Aracaju</h3>
+                                    <p>Momento especial no CEN em Aracaju</p>
+                                    <div class="gallery-date">
+                                        <i class="far fa-calendar"></i>
+                                        <span>1964</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">Antônio <i class="fas fa-heart"></i> Maria</div>
+                    <p class="footer-desc">Um casal que dedicou suas vidas ao serviço de Deus e à propagação do Evangelho de Jesus Cristo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="sermoes-ae.html">Sermões</a></li>
+                        <li><a href="livros.html">Livros</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@antonioemaria.com.br">contato@antonioemaria.com.br</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Antônio e Maria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script src="../js/modules/galeria.js"></script>
+   
+</body>
+</html>

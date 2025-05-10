@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antônio e Maria</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+ 
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="/" class="logo">Antônio <i class="fas fa-heart"></i> Maria</a>
+
+            <!-- Navegação Principal -->
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Biografias</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/antonio-elias.html">Rev. Antônio Elias</a></li>
+                            <li><a href="pages/maria-jose.html">Profa. Maria José</a></li>
+                            <li><a href="pages/historia-casal.html">História do Casal</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Sermões</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/sermoes-ae.html">Audios</a></li>
+                            <li><a href="pages/videos.html">Videos</a></li>
+                            <li><a href="pages/oracoes.html">Orações</a></li>
+                            
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Livros</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/livros.html">Biblioteca</a></li>
+                            <li><a href="pages/esbocos.html">Esboços</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Depoimentos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cartas.html">Cartas</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="pages/galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="pages/sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                    
+                </ul>
+            </nav>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-container">
+                <button class="search-toggle" type="button" aria-label="Abrir pesquisa">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div class="search-box">
+                    <input type="text" placeholder="Pesquisar..." autocomplete="off" class="search-input">
+                    <div class="search-results"></div>
+                </div>
+            </div>
+
+            <!-- Botão Menu Mobile -->
+            <button class="mobile-toggle" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Menu Mobile -->
+            <nav class="nav-mobile">
+                <div class="mobile-search">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <ul class="mobile-nav-list">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Biografias</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/antonio-elias.html">Rev. Antônio Elias</a></li>
+                            <li><a href="pages/maria-jose.html">Profa. Maria José</a></li>
+                           
+                          
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Sermões</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/sermoes-ae.html">Audios</a></li>
+                            <li><a href="pages/videos.html">Videos</a></li>
+                            <li><a href="pages/oracoes.html">Orações</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="pages/livros.html" class="nav-link">Livros</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="nav-link">Depoimentos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="pages/cartas.html">Cartas</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="pages/galeria.html" class="nav-link">Galeria</a></li>
+                    <li><a href="pages/sobre-nos.html" class="nav-link">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" data-anime="fade-down">
+            <img src="images/amor-1.jpg" alt="Antônio e Maria" class="hero-image">
+        </section>
+
+        <!-- Título Principal -->
+        <div class="main-title">
+            <div class="container">
+                <h1>Conheça a história do casal que se encontrou na fé e no amor por Jesus Cristo</h1>
+            </div>
+        </div>
+
+        <!-- Seções de Conteúdo -->
+        <div class="sections-container">
+
+            <!-- Seção de Biografias -->
+            <section class="biografia-section">
+                <div class="biografia-grid">
+                    <div class="biografia-content">
+                        <h2 class="section-title">Biografias</h2>
+                        <p>Conheça as histórias inspiradoras de Rev. Antônio Elias e Profa. Maria José, que dedicaram suas vidas ao ensino e à fé.</p>
+                        <p>Através de suas biografias, você descobrirá mensagens edificantes e experiências que marcaram gerações.</p>
+                    </div>
+                    <div class="biografia-swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="biografia-slide swiper-slide">
+                                <div class="biografia-image">
+                                    <img src="./images/AE pregando.jpg" alt="Rev. Antônio Elias">
+                                </div>
+                                <div class="biografia-overlay">
+                                    <h3>Antônio Elias</h3>
+                                    <p>Uma vida dedicada ao ensino e à fé, com mensagens inspiradoras que continuam tocando corações.</p>
+                                    <a href="pages/antonio-elias.html" class="btn-overlay">Conhecer Biografia</a>
+                                </div>
+                            </div>
+                            <div class="biografia-slide swiper-slide">
+                                <div class="biografia-image">
+                                    <img src="./images/mj-2.jpg" alt="Profa. Maria José" loading="lazy">
+                                </div>
+                                <div class="biografia-overlay">
+                                    <h3>Maria José</h3>
+                                    <p>Histórias de dedicação e amor ao próximo, que inspiram novas gerações.</p>
+                                    <a href="pages/maria-jose.html" class="btn-overlay">Conhecer Biografia</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção O Encontro -->
+            <section class="section bg-light" data-anime="fade-right">
+                <div class="container">
+                    <div class="section-grid reverse">
+                        <div class="section-image" data-anime="zoom-in">
+                            <img src="images/encontro.jpg" alt="O Encontro">
+                        </div>
+                        <div class="section-content">
+                            <h2>O Encontro</h2>
+                            <p>Conheça a história do encontro entre Antônio e Maria, que mudou suas vidas para sempre.</p>
+                            <a href="pages/historia-casal.html" class="btn">Conhecer História</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Mensagens -->
+            <section class="section bg-light" data-anime="fade-right">
+                <div class="container">
+                    <div class="section-grid">
+                        <div class="section-image" data-anime="zoom-in">
+                            <img src="images/MensagensIMG.jpg" alt="Mensagens">
+                        </div>
+                        <div class="section-content">
+                            <h2>Mensagens</h2>
+                            <p>Ouça as mensagens inspiradoras do Rev. Antônio Elias, que por décadas proclamou a Palavra de Deus com sabedoria e unção.</p>
+                            <a href="pages/sermoes-ae.html" class="btn">Ouça os Sermões</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Livros -->
+            <section class="section" data-anime="fade-left">
+                <div class="container">
+                    <div class="section-grid reverse">
+                        <div class="section-image" data-anime="zoom-in">
+                            <img src="images/LivrosIMG.jpg" alt="Livros">
+                        </div>
+                        <div class="section-content">
+                            <h2>Livros</h2>
+                            <p>Conheça os livros escritos por Maria José, que compartilham experiências e ensinamentos preciosos.</p>
+                            <a href="pages/livros.html" class="btn">Veja os Livros</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Carrossel Clean dos Livros -->
+            <section class="book-carousel-section">
+              <h2 class="carousel-title">Nossos Livros</h2>
+              <div class="book-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=1" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Cartas de Amor.jpg" alt="Cartas de Amor">
+                      </div>
+                      <div class="book-info">
+                        <h3>Cartas de Amor</h3>
+                        <div class="book-author">Maria José A. Elias e Rev. Antônio Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=2" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Testemunhos.jpg" alt="Testemunhos Vivos">
+                      </div>
+                      <div class="book-info">
+                        <h3>Testemunhos Vivos</h3>
+                        <div class="book-author">Rev. Antônio Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=3" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Sementeira.jpg" alt="Sementeira da Palavra">
+                      </div>
+                      <div class="book-info">
+                        <h3>Sementeira da Palavra</h3>
+                        <div class="book-author">Rev. Antônio Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=4" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/O teu Deus.jpg" alt="O teu Deus, onde está?">
+                      </div>
+                      <div class="book-info">
+                        <h3>O teu Deus, onde está?</h3>
+                        <div class="book-author">Maria José A. Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=5" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Agua feita.jpg" alt="Água feita vinho">
+                      </div>
+                      <div class="book-info">
+                        <h3>Água feita vinho</h3>
+                        <div class="book-author">Maria José A. Elias e Rev. Antônio Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=6" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Cantigas.jpg" alt="Cantigas para o meu Deus">
+                      </div>
+                      <div class="book-info">
+                        <h3>Cantigas para o meu Deus</h3>
+                        <div class="book-author">Maria José A. Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=7" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/era-sem-forma.jpg" alt="Era sem forma e vazia...">
+                      </div>
+                      <div class="book-info">
+                        <h3>Era sem forma e vazia...</h3>
+                        <div class="book-author">Maria José A. Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="pages/livro.html?id=8" class="book-card">
+                      <div class="book-image">
+                        <img src="images/livros/Familia em Foco.jpg" alt="Família em Foco">
+                      </div>
+                      <div class="book-info">
+                        <h3>Família em Foco</h3>
+                        <div class="book-author">Maria José A. Elias</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </section>
+
+            <!-- Seção Esboços -->
+            <section class="section bg-light" data-anime="fade-right">
+                <div class="container">
+                    <div class="section-grid reverse">
+                        <div class="section-image" data-anime="zoom-in">
+                            <img src="images/Esbocos.jpg" alt="Esboços">
+                        </div>
+                        <div class="section-content">
+                            <h2>Esboços</h2>
+                            <p>Explore os esboços de sermões e estudos bíblicos preparados com dedicação pelo Rev. Antônio Elias.</p>
+                            <a href="pages/esbocos.html" class="btn">Ver Esboços</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção Sobre -->
+            <section class="section" data-anime="fade-left">
+                <div class="container">
+                    <div class="section-grid">
+                        <div class="section-image" data-anime="zoom-in">
+                            <img src="images/SobreIMG.jpg" alt="Sobre">
+                        </div>
+                        <div class="section-content">
+                            <h2>Sobre Nós</h2>
+                            <p>Conheça mais sobre nossa missão de preservar e compartilhar o legado do Rev. Antônio Elias e Maria José.</p>
+                            <a href="pages/sobre-nos.html" class="btn">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-col">
+                    <div class="footer-logo">Antônio <i class="fas fa-heart"></i> Maria</div>
+                    <p class="footer-desc">Um casal que dedicou suas vidas ao serviço de Deus <br>e à propagação do Evangelho de Jesus Cristo.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="pages/sermoes-ae.html">Sermões</a></li>
+                        <li><a href="pages/livros.html">Livros</a></li>
+                        <li><a href="pages/galeria.html">Galeria</a></li>
+                        <li><a href="pages/sobre-nos.html">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contato@antonioemaria.com.br">contato@antonioemaria.com.br</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+5511999999999">(11) 99999-9999</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>São Paulo, SP</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Antônio e Maria. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ 
+    <script type="module" src="js/main.js"></script>
+   
+</body>
+</html>
+
+
+
